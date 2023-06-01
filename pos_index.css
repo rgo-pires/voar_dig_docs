@@ -1,0 +1,55 @@
+body {
+    /*começa aqui a configuração do tamanho da imagem de BG */
+  background-size: contain;
+  width: auto;
+  height: 80em;
+  /*termina aqui a configuração do tamanho da imagem de BG */
+  display: grid;
+  height: auto; /* altura do cabeçalho*/
+  font-family: Arial, sans-serif;
+
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "aside main main";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh auto;
+}
+
+.o-header {
+  grid-area: header;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.o-aside {
+  grid-area: aside;
+  padding: 0.5rem;
+}
+
+.o-main {
+  grid-area: main;
+  padding: 0.5rem;
+}
+
+.o-footer {
+  grid-area: footer;
+  padding: 1rem;
+  text-align: center;
+}
+
+table, th, td { /* tabela do HEAD */
+    border: 1px solid;
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.o-header, .o-aside, .o-main {
+ background: #BC20E2; /* configura a cor de fundo da pagina */
+  /*background-image: url('Img/VoarHangaresBG.jpg');*/
+ /* color: #FDFDFD;*/
+}

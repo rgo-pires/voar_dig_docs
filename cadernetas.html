@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title</title>
+        <link rel="stylesheet" href="CSS/pos_index.css"> <!-- css da pagina-->
+        <link rel="stylesheet" type="text/css" href="navbar_header.css"> <!-- css da NAVBAR-->
+
+</head>
+<body>
+        <header class="o-header"> <!-- aqui inicia o HEADER -->
+                <table style="width:100%">
+                    <tr style="height:150px">
+                        <td style="width:15%">
+                            <img src="Img/Voar_Solo_Vertical_Transparente_Positiva.png" width="149px" height="149px" align="center">
+                        </td>
+                        <td style="width:85%">
+                            <h1>VOAR DIGITAL DOCS</h1>
+                            <h5>A DOCUMENTAÇÃO DA SUA AERONAVE DIGITALIZADA</h5>
+                        </td>
+                </table>
+        <!-- Inicio da NAVBAR -->
+            <style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+.show {
+  display: block;
+}
+
+
+            </style>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+
+
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="funcCadernetas()">Cadernetas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="botaoCadernetas">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="funcDiarioBordo()">Diario de Bordo
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="botaoDiarioBordo">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+
+                 <div class="dropdown">
+                    <button class="dropbtn" onclick="funcDocsPorteObrigatorio()">Docs Porte Obrigatório
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="botaoDocsPorteObrigatorio">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+
+<!--
+            <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+function funcCadernetas() {
+  document.getElementById("botaoCadernetas").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var botaoCadernetas = document.getElementById("botaoCadernetas");
+    if (botaoCadernetas.classList.contains('show')) {
+      botaoCadernetas.classList.remove('show');
+    }
+  }
+}
+
+
+            </script>
+
+
+             <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+function funcDiarioBordo() {
+  document.getElementById("botaoDiarioBordo").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var botaoDiarioBordo = document.getElementById("botaoDiarioBordo");
+    if (botaoDiarioBordo.classList.contains('show')) {
+      botaoDiarioBordo.classList.remove('show');
+    }
+  }
+}
+
+            </script>
+
+
+            <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+            </script>
+
+            <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+function funcDocsPorteObrigatorio() {
+  document.getElementById("botaoDocsPorteObrigatorio").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var botaoDocsPorteObrigatorio = document.getElementById("botaoDocsPorteObrigatorio");
+    if (botaoDocsPorteObrigatorio.classList.contains('show')) {
+      botaoDocsPorteObrigatorio.classList.remove('show');
+    }
+  }
+}
+
+
+            </script> <!-- aqui termina o botão DOCS PORTE OBRIGATÓRIO -->
+
+
+        <!-- fim da NAVBAR -->
+
+        </header> <!-- aqui termina HEADER -->
+
+        <aside class="o-aside">ASIDE</aside>
+        <main class="o-main">POS INDEX
+
+
+
+
+
+
+        </main>
+        <footer class="o-footer">© 2023 VOAR AVIATION - TODOS OS DIREITOS RESERVADOS.</footer>
+
+
+</body>
+</html>
